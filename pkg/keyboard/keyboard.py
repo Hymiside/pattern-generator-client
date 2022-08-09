@@ -6,7 +6,7 @@ def main_keyboard() -> types.InlineKeyboardMarkup:
         types.InlineKeyboardButton(text="Создать паттерн", callback_data="generate_pattern"),
         types.InlineKeyboardButton(text="Пополнить счёт", callback_data="update_cash"),
         types.InlineKeyboardButton(text="Инструкция", callback_data="tutorial"),
-        types.InlineKeyboardButton(text="Профиль", callback_data="profile")
+        types.InlineKeyboardButton(text="Проверить баланс", callback_data="balance")
     ]
     inline_keyboard = types.InlineKeyboardMarkup(row_width=2)
     inline_keyboard.add(*buttons)
